@@ -38,14 +38,32 @@ a {
     text-decoration: none;
 }
 
+a:active {
+    text-decoration: double;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 footer ul {
     padding-top: 100px;
+    position: absolute;
+    bottom: 40%;
+    left: 45%;
 }
 
 footer p {
-    color: #000000b4;
+    color: #828282;
     text-align: center;
     margin-top: 20px;
+    position: absolute;
+    bottom: 35%;
+    left: 47%;
+}
+
+footer {
+    position: relative;
 }
 
 .About-container img {
@@ -73,7 +91,7 @@ h1 {
 }
 
 .about-text p {
-    color: #000000be;
+    color: #828282;
     text-align: justify;
 }
 
@@ -115,15 +133,21 @@ fieldset {
     margin: 30px;
 }
 
+legend {
+    margin-bottom: 15px;
+}
+
 input {
     width: 290px;
-    height: 30px;
-    border: none;
+    height: 35px;
+    border: 2px solid #E8ECF4;
+    border-radius: 8px;
 }
 
 textarea {
     padding: 10px;
-    border: none;
+    border: 2px solid #E8ECF4;
+    border-radius: 8px;
 }
 
 .contact button {
@@ -135,7 +159,7 @@ textarea {
     border-radius: 10px;
     cursor: pointer;
     position: relative;
-    right: -18%;
+    right: -20%;
 }
 
 @media (max-width: 390px) {
@@ -145,7 +169,7 @@ textarea {
 
     .about-text button {
         padding: 6px 16px;
-        margin: 20px auto;
+        margin: 20px 50%;
         font-size: 12px;
     }
 }
@@ -171,11 +195,35 @@ textarea {
     }
 
     .about-text {
-        width: 100%;
+        width: 98%;
+    }
+
+    .about-text button {
+        margin: 20px 38%;
+    }
+
+    .contact button {
+        right: -65%;
+    }
+
+    footer>ul svg {
+        width: 35px;
+    }
+
+    footer ul {
+        top: -15%;
+        right: 40%;
+    }
+
+    footer p {
+        font-size: 11px;
+        top: 37%;
+        left: 37%;
     }
 }
-@media (min-width: 480px) and (max-width:780px){
-     nav ul {
+
+@media (min-width: 480px) and (max-width:780px) {
+    nav ul {
         gap: 12px;
     }
 
@@ -196,5 +244,9 @@ textarea {
 
     .about-text {
         width: 100%;
+    }
+
+      .contact button {
+        right: -35%;
     }
 }
