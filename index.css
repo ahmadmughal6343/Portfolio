@@ -185,6 +185,9 @@ footer p {
     text-align: center;
     margin-top: 20px;
 }
+.border{
+    width: 100vw;
+}
 
 @media (max-width:480px) {
     nav ul {
