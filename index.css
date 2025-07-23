@@ -55,18 +55,21 @@ a {
     text-decoration: none;
 }
 
-.intro-section {
-    width: 40%;
-    margin: 10% 7%;
+a:active {
+    text-decoration: double;
 }
 
-/* .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
+a:hover {
+    text-decoration: underline;
+}
 
-.intro-section span {
+.intro-section {
+    width: 40%;
+    margin: 9% 7%;
+}
+
+
+ span {
     color: #ffc229;
     line-height: 25px;
     font-weight: 400;
@@ -79,17 +82,16 @@ a {
 }
 
 .text-about {
-    color: gray;
+    color: #828282;
     text-align: justify;
     line-height: 22px;
-    margin: 10px;
 }
 
 .button button {
     padding: 7px 19px;
     margin: 10px;
     border: 2px solid;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .project-head {
@@ -149,13 +151,13 @@ h2 {
 .about-project {
     width: 45%;
     height: 100%;
-    padding: 7% 5%;
+    padding: 8% 5%;
     text-align: justify;
 }
 
 .project p {
-    padding: 0px 10px;
-    color: #00000084;
+    padding: 0px px;
+    color: #828282;
     font-size: 15px;
 }
 
@@ -168,7 +170,7 @@ h2 {
 .about-project button {
     margin: 15px auto;
     padding: 8px 20px;
-    border: 2px solid #000000b4;
+    border: 2px solid #828282;
     border-radius: 20px;
 }
 
@@ -176,20 +178,42 @@ section {
     margin-top: 5%;
 }
 
+footer {
+    position: relative;
+}
+
 footer ul {
     padding-top: 100px;
+    position: absolute;
+    bottom: 40%;
+    left: 45%;
 }
 
 footer p {
-    color: #000000b4;
+    color: #828282;
     text-align: center;
     margin-top: 20px;
+    position: absolute;
+    bottom: 35%;
+    left: 47%;
 }
-.border{
+
+.border {
     width: 100vw;
 }
 
 @media (max-width:480px) {
+    header{
+      background-size: 60% 60%;
+      background-position: top;
+      background-position-x: right;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+
     nav ul {
         gap: 10px;
     }
@@ -200,14 +224,15 @@ footer p {
     }
 
     .greet {
-        font-size: 28px;
+        font-size: 20px;
         line-height: 28px;
+        width: 80%;
     }
 
     .text-about {
         line-height: 15px;
-        margin: 10px;
-        font-size: small;
+        font-size: 12px;
+        padding-right: 8px;
     }
 
     .button button {
@@ -218,72 +243,103 @@ footer p {
     }
 
     .intro-section {
-        width: 45%;
-        margin: auto 3%;
-        margin-bottom: 5%;
+        width: 80%;
+        margin: auto ;
+        margin-bottom: 15%;
+        padding-left: 6px;
+        position: relative;
+        top: 5em;
     }
 
     .picture img {
         height: 60%;
         width: 35%;
-        top: 15%;
+        top: 2%;
     }
 
     .project p {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .project h3 {
-        font-size: 17px;
+        font-size: 12px;
         font-weight: 400;
         margin: 5px auto;
     }
 
+    .project-head h2{
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .project-head div{
+        height: 2px;
+        width: 70px;
+    }
+
     .about-project button {
-        font-size: xx-small;
-        padding: 4px 13px;
+        font-size: 6px;
+        padding: 4px 6px;
         border-width: 1px;
+        margin: auto;
     }
 
     .project {
         border-radius: 20px;
-        width: 65%;
-        height: 200px;
+        width: 75%;
+        height: 150px;
         margin: 50px auto;
     }
 
     footer>ul svg {
         width: 35px;
+        height: 250px;
+    }
+
+    footer ul {
+        top: -15%;
+        right: 40%;
     }
 
     footer p {
         font-size: 11px;
+        top: 37%;
+        left: 37%;
     }
 }
 
 @media (min-width: 480px) and (max-width:780px) {
-    .greet {
-        font-size: 30px;
-        line-height: 28px;
+     header{
+      background-size: 60% 85%;
+      background-position: top;
+      background-position-x: right;
+      margin-bottom: 6em;
     }
 
-    .text-about {
-        line-height: 15px;
-        margin: 13px;
-        font-size: 15px;
-    }
-
-    .picture img {
-        width: 35%;
-        top: -1%;
+    .hero{
+        display: flex;
+        flex-direction: column;
     }
 
     nav ul {
-        gap: 12px;
+        gap: 10px;
     }
 
     nav {
         margin: auto;
+        font-size: 13px;
+    }
+
+    .greet {
+        font-size: 25px;
+        line-height: 28px;
+        width: 70%;
+    }
+
+    .text-about {
+        line-height: 15px;
+        font-size: 12px;
+        padding-right: 8px;
     }
 
     .button button {
@@ -294,6 +350,67 @@ footer p {
     }
 
     .intro-section {
-        margin: 4% 5%;
+        width: 80%;
+        margin: auto ;
+        margin-bottom: 15%;
+        padding-left: 6px;
+        position: relative;
+        top: 10em;
+    }
+
+    .picture img {
+        height: 80%;
+        width: 35%;
+        top: 3%;
+    }
+
+    .project p {
+        font-size: 11px;
+    }
+
+    .project h3 {
+        font-size: 13px;
+        font-weight: 450;
+        margin: 5px auto;
+    }
+
+    .project-head h2{
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .project-head div{
+        height: 3px;
+        width: 77px;
+    }
+
+    .about-project button {
+        font-size: 9px;
+        padding: 4px 6px;
+        border-width: 1px;
+        margin:5px auto;
+    }
+
+    .project {
+        border-radius: 20px;
+        width: 75%;
+        height: 190px;
+        margin: 50px auto;
+    }
+
+    footer>ul svg {
+        width: 35px;
+        height: 250px;
+    }
+
+    footer ul {
+        top: -15%;
+        right: 40%;
+    }
+
+    footer p {
+        font-size: 11px;
+        top: 37%;
+        left: 40%;
     }
 }
