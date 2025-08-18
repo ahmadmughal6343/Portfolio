@@ -13,7 +13,7 @@ body {
 
 header {
     width: 100vw;
-    background-image: url(yellow-bg.png);
+    background-image: url(asset-file/yellow-bg.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 50% 100%;
@@ -124,14 +124,14 @@ h2 {
 
 
 .project1 {
-    background-image: url(yooga_girl233rlf.jpg);
+    background-image: url(asset-file/yooga_girl233rlf.jpg);
     background-repeat: no-repeat;
     background-size: 45% 100%;
     background-position: right;
 }
 
 .project2 {
-    background-image: url(pEn_piCimge.jpg);
+    background-image: url(asset-file/pEn_piCimge.jpg);
     background-repeat: no-repeat;
     background-size: 45% 100%;
     background-position: left;
@@ -142,7 +142,7 @@ h2 {
 }
 
 .project3 {
-    background-image: url(iMaGeproJecK.jpg);
+    background-image: url(asset-file/iMaGeproJecK.jpg);
     background-repeat: no-repeat;
     background-size: 45% 100%;
     background-position: right;
